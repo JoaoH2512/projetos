@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', Arial, sans-serif; /* Fonte futurista */
+  background: radial-gradient(circle at top, #0a0a0f, #050509); /* Fundo gamer escuro */
+  color: #e3e3e3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* Header fixo */
+header {
+  background: linear-gradient(90deg, #00ffcc, #7d00ff); /* Degradê neon */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-weight: bold;
+  z-index: 100;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #7d00ff; /* Glow neon */
+  border-bottom: 2px solid #00ffcc;
+}
+
+/* Footer fixo */
+footer {
+  background: linear-gradient(90deg, #7d00ff, #00ffcc);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #00ffcc;
+  border-top: 2px solid #7d00ff;
+}
+
+/* Espaço central entre header e footer */
+main {
+  display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+  min-height: calc(100vh - 140px); /* 100% da tela menos header e footer */
+  padding: 20px;
+  margin-top: 70px;          /* Afasta do header */
+  margin-bottom: 70px;       /* Afasta do footer */
+}
+
+/* Card */
+section {
+  background: rgba(20, 20, 30, 0.9); /* Fundo translúcido gamer */
+  padding: 25px;
+  text-align: center;
+  border-radius: 16px;
+  border: 2px solid #00ffcc;
+  width: 380px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação no hover */
+section:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px #00ffcc, 0 0 50px #7d00ff;
+}
+
+/* Imagem */
+section img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #7d00ff;
+  box-shadow: 0 0 15px #7d00ff, 0 0 25px #00ffcc;
+}
+
+/* Texto */
+section p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #e3e3e3;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Título */
+section h2 {
+  font-size: 22px;
+  color: #00ffcc;
+  margin-bottom: 12px;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #7d00ff;
+}
